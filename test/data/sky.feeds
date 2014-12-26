@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <atom:link href="http://media.skynews.com/feeds/rss/uk.xml" rel="self" type="application/rss+xml"/>
+    <title>UK News - The latest headlines from the UK | Sky News</title>
+    <link>http://news.sky.com/uk</link>
+    <image>
+      <title>UK News - The latest headlines from the UK | Sky News</title>
+      <url>http://media.skynews.com/images/web/logo/skynewshd_rss.png</url>
+      <link>http://news.sky.com/uk</link>
+    </image>
+    <description>Expert comment and analysis on the latest UK news, with headlines from England, Scotland, Northern Ireland and Wales.</description>
+    <language>en-GB</language>
+    <copyright>Copyright 2014, BSKYB. All Rights Reserved.</copyright>
+    <lastBuildDate>Fri, 26 Dec 2014 20:00:36 +0000</lastBuildDate>
+    <category>Sky News</category>
+    <ttl>1</ttl>
+    <item>
+      <title>Boxing Day Snow As UK Slides Towards -15C</title>
+      <link>http://news.sky.com/story/1397761</link>
+      <description>Severe weather alerts are issued for Boxing Day as Liverpool's John Lennon Airport shuts due to a "deluge" of snow.</description>
+      <pubDate>Fri, 26 Dec 2014 19:32:10 +0000</pubDate>
+      <guid>http://news.sky.com/story/1397761</guid>
+      <enclosure url="http://media.skynews.com/media/images/generated/2014/12/26/359031/default/v2/cegrab-20141226-165511-0-1-70x50.jpg" length="0" type="image/jpeg"/>
+      <media:description type="html">Snow on the West Bromwich pitch</media:description>
+      <media:thumbnail url="http://media.skynews.com/media/images/generated/2014/12/26/359031/default/v2/cegrab-20141226-165511-0-1-70x50.jpg" width="70" height="50"/>
+      <media:content type="image/jpeg" url="http://media.skynews.com/media/images/generated/2014/12/26/359031/default/v2/cegrab-20141226-165511-0-1-70x50.jpg"/>
+    </item>
+    <item>
+      <title>Train Chaos: Major London Station Shut Tomorrow</title>
+      <link>http://news.sky.com/story/1398050</link>
+      <description>Kings Cross, one of the UK's busiest stations, will be closed on a day when thousands are travelling after the Christmas break.</description>
+      <pubDate>Fri, 26 Dec 2014 18:07:18 +0000</pubDate>
+      <guid>http://news.sky.com/story/1398050</guid>
+      <enclosure url="http://media.skynews.com/media/images/generated/2013/10/19/265674/default/v2/east-coast-main-line-1-70x50.jpg" length="0" type="image/jpeg"/>
+      <media:description type="html">East Coast sell-off plans</media:description>
+      <media:thumbnail url="http://media.skynews.com/media/images/generated/2013/10/19/265674/default/v2/east-coast-main-line-1-70x50.jpg" width="70" height="50"/>
+      <media:content type="image/jpeg" url="http://media.skynews.com/media/images/generated/2013/10/19/265674/default/v2/east-coast-main-line-1-70x50.jpg"/>
+    </item>
+    <item>
+      <title>City Link Jobs Blow Announcement 'Stinks'</title>
+      <link>http://news.sky.com/story/1397886</link>
+      <description>The Christmas Day announcement warning 3,000 parcel delivery workers they may lose their jobs is 'disgraceful', says the RMT.</description>
+      <pubDate>Fri, 26 Dec 2014 17:17:43 +0000</pubDate>
+      <guid>http://news.sky.com/story/1397886</guid>
+      <enclosure url="http://media.skynews.com/media/images/generated/2014/12/25/358844/default/v3/cegrab-20141225-163250-0-1-70x50.jpg" length="0" type="image/jpeg"/>
+      <media:description type="html">City Link Gvs</media:description>
+      <media:thumbnail url="http://media.skynews.com/media/images/generated/2014/12/25/358844/default/v3/cegrab-20141225-163250-0-1-70x50.jpg" width="70" height="50"/>
+      <media:content type="image/jpeg" url="http://media.skynews.com/media/images/generated/2014/12/25/358844/default/v3/cegrab-20141225-163250-0-1-70x50.jpg"/>
+    </item>
+    <item>
+      <title>Boxing Day Bargain Hunters Hit High Street</title>
+      <link>http://news.sky.com/story/1397749</link>
+      <description>It has been a busy Boxing Day at the sales but experts say numbers could be down because of early online sales.</description>
+      <pubDate>Fri, 26 Dec 2014 17:35:57 +0000</pubDate>
+      <guid>http://news.sky.com/story/1397749</guid>
+      <enclosure url="http://media.skynews.com/media/images/generated/2014/12/26/359033/default/v1/459364429-1-70x50.jpg" length="0" type="image/jpeg"/>
+      <media:description type="html">Boxing Day Sales</media:description>
+      <media:thumbnail url="http://media.skynews.com/media/images/generated/2014/12/26/359033/default/v1/459364429-1-70x50.jpg" width="70" height="50"/>
+      <media:content type="image/jpeg" url="http://media.skynews.com/media/images/generated/2014/12/26/359033/default/v1/459364429-1-70x50.jpg"/>
+    </item>
+    <item>
+      <title>Archbishop Of Canterbury Has Pneumonia</title>
+      <link>http://news.sky.com/story/1397931</link>
+      <description>The Most Rev Justin Welby is 'feeling pretty awful but he will be alright', a Lambeth Palace spokesperson tells Sky News.</description>
+      <pubDate>Fri, 26 Dec 2014 13:43:39 +0000</pubDate>
+      <guid>http://news.sky.com/story/1397931</guid>
+      <enclosure url="http://media.skynews.com/media/images/generated/2014/12/7/354741/default/v3/10238901-1-1-70x50.jpg" length="0" type="image/jpeg"/>
+      <media:description type="html">Welby shock at Britain's hunger-stricken poor</media:description>
+      <media:thumbnail url="http://media.skynews.com/media/images/generated/2014/12/7/354741/default/v3/10238901-1-1-70x50.jpg" width="70" height="50"/>
+      <media:content type="image/jpeg" url="http://media.skynews.com/media/images/generated/2014/12/7/354741/default/v3/10238901-1-1-70x50.jpg"/>
+    </item>
+    <item>
+      <title>NHS Seeks To Get Obese Britons Back In Shape</title>
+      <link>http://news.sky.com/story/1397830</link>
+      <description>As waistlines keep expanding, GPs are asked to monitor patients who are putting on weight and offer them support.</description>
+      <pubDate>Fri, 26 Dec 2014 09:11:39 +0000</pubDate>
+      <guid>http://news.sky.com/story/1397830</guid>
+      <enclosure url="http://media.skynews.com/media/images/generated/sky-news/content/StaticFile/jpg/2008/Oct/Week2/130893/default/v0/15115501-70x50.jpg" length="0" type="image/jpeg"/>
+      <media:description type="html">Scales</media:description>
+      <media:thumbnail url="http://media.skynews.com/media/images/generated/sky-news/content/StaticFile/jpg/2008/Oct/Week2/130893/default/v0/15115501-70x50.jpg" width="70" height="50"/>
+      <media:content type="image/jpeg" url="http://media.skynews.com/media/images/generated/sky-news/content/StaticFile/jpg/2008/Oct/Week2/130893/default/v0/15115501-70x50.jpg"/>
+    </item>
+    <item>
+      <title>Archbishop Calls In Sick For Christmas Sermon</title>
+      <link>http://news.sky.com/story/1397496</link>
+      <description>The Church of England leader's illness prevents him from delivering his annual address at Canterbury Cathedral.</description>
+      <pubDate>Thu, 25 Dec 2014 12:19:29 +0000</pubDate>
+      <guid>http://news.sky.com/story/1397496</guid>
+      <enclosure url="http://media.skynews.com/media/images/generated/2014/12/7/354741/default/v3/10238901-1-1-70x50.jpg" length="0" type="image/jpeg"/>
+      <media:description type="html">Welby shock at Britain's hunger-stricken poor</media:description>
+      <media:thumbnail url="http://media.skynews.com/media/images/generated/2014/12/7/354741/default/v3/10238901-1-1-70x50.jpg" width="70" height="50"/>
+      <media:content type="image/jpeg" url="http://media.skynews.com/media/images/generated/2014/12/7/354741/default/v3/10238901-1-1-70x50.jpg"/>
+    </item>
+    <item>
+      <title>Two Men Held After Sheffield Car Shooting</title>
+      <link>http://news.sky.com/story/1397657</link>
+      <description>Jordan Thomas was in a car at traffic lights when he was killed in what police believe could have been a targeted attack.</description>
+      <pubDate>Thu, 25 Dec 2014 16:50:00 +0000</pubDate>
+      <guid>http://news.sky.com/story/1397657</guid>
+      <enclosure url="http://media.skynews.com/media/images/generated/2014/12/25/358847/default/v1/sheffield-1-70x50.jpg" length="0" type="image/jpeg"/>
+      <media:description type="html">Jordan Thomas</media:description>
+      <media:thumbnail url="http://media.skynews.com/media/images/generated/2014/12/25/358847/default/v1/sheffield-1-70x50.jpg" width="70" height="50"/>
+      <media:content type="image/jpeg" url="http://media.skynews.com/media/images/generated/2014/12/25/358847/default/v1/sheffield-1-70x50.jpg"/>
+    </item>
+    <item>
+      <title>Boxing Day National Newspaper Front Pages</title>
+      <link>http://news.sky.com/story/1397700</link>
+      <description>Sky News takes a look at the stories making a splash on the front pages of Friday's national newspapers.</description>
+      <pubDate>Fri, 26 Dec 2014 01:24:07 +0000</pubDate>
+      <guid>http://news.sky.com/story/1397700</guid>
+      <enclosure url="http://media.skynews.com/media/images/generated/2014/12/25/358880/default/v2/mirror-1-70x50.jpg" length="0" type="image/jpeg"/>
+      <media:description type="html">Mirror.</media:description>
+      <media:thumbnail url="http://media.skynews.com/media/images/generated/2014/12/25/358880/default/v2/mirror-1-70x50.jpg" width="70" height="50"/>
+      <media:content type="image/jpeg" url="http://media.skynews.com/media/images/generated/2014/12/25/358880/default/v2/mirror-1-70x50.jpg"/>
+    </item>
+    <item>
+      <title>Jim Davidson: Arrest Frightened Life Out Of Me</title>
+      <link>http://news.sky.com/story/1397644</link>
+      <description>The comic tells Sky News he feared being a victim of the backlash over the Jimmy Savile abuse scandal.</description>
+      <pubDate>Fri, 26 Dec 2014 05:30:08 +0000</pubDate>
+      <guid>http://news.sky.com/story/1397644</guid>
+      <enclosure url="http://media.skynews.com/media/images/generated/2014/12/25/358840/default/v3/cegrab-20141225-150945-689-1-70x50.jpg" length="0" type="image/jpeg"/>
+      <media:description type="html">Jim Davidson.</media:description>
+      <media:thumbnail url="http://media.skynews.com/media/images/generated/2014/12/25/358840/default/v3/cegrab-20141225-150945-689-1-70x50.jpg" width="70" height="50"/>
+      <media:content type="image/jpeg" url="http://media.skynews.com/media/images/generated/2014/12/25/358840/default/v3/cegrab-20141225-150945-689-1-70x50.jpg"/>
+    </item>
+  </channel>
+</rss>

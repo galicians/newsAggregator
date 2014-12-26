@@ -1,0 +1,22 @@
+{
+  "name": "newsAggregator",
+  "version": "1.0.0",
+  "description": "node_server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Portabales",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "mocha": "^2.0.1",
+    "should": "^4.4.1"
+  },
+  "dependencies": {
+    "request": "^2.51.0",
+    "rsj": "0.0.4"
+  }
+}
