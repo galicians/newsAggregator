@@ -1,5 +1,5 @@
 var should = require('should');
-var Story = require('../models/story')
+var Story = require('../models/story');
 
 
 describe('a single story', function() {
@@ -19,7 +19,7 @@ describe('a single story', function() {
                 source: 'Sky News',
                 sourceLogo : 'http://media.skynews.com/images/web/logo/skynewshd_rss.png'
             }));
-        })
+        });
 
         it("a title",function() {
             story.title.should.equal('Boxing Day Snow As UK Slides Towards -15C');

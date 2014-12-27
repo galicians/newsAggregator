@@ -1,4 +1,7 @@
 
+<h3>News aggregator</h3>
+
+
 Simple news aggregation website displaying the latest news across multiple sources.
 Requirements:
 -  Display the top 10 headlines from the BBC, SKY and Hacker News on a webpage
@@ -21,5 +24,8 @@ Requirements:
 <h6> - TDD Mocha</h6>
 <h6> - Should matchers</h6>
 
+Server side testing considerations:
 
+<h6> - test/test_server/server_steps.js:</h6>
+Rather than hard-coding a port for the tests to run on, I've used server.listen(0) to tell Node to pick one available. To check the port is being used just, server.address().port
 
