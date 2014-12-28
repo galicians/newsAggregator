@@ -1,19 +1,33 @@
-
+var request = require('request');
+var fs = require('fs');
+var Writable = require('stream').Writable;
+var Promise = require('Bluebird');
 
 exports.getAllFeeds = function(source){
-    rsj.r2j(source,function(jsonFeeds) { 
-    var news = JSON.parse(jsonFeeds);
+    return new Promise(function(resolve, reject) {
+        request.get(source).on('response', function(dataFeeds){
+            var response = {}
+            response.statusCode = dataFeeds.statusCode
+            resolve(response)
+        }).on('error', function(err) {
 
-    
-    console.log("===============news===============")
-    news.forEach(function(story) {
-        console.log('Story:' + story.title)
-    })
-})
-
-}
+        });
+    });
+};
 
 
-exports.fetchAllNews = function() {
 
-}
+
+
+
+
+exports.feedsToJson = function(data) {
+    //return data in jsonformat
+};
+
+
+exports.newsToMongo = function(dataJson){
+    // return 200, 500, ...
+};
+
+
