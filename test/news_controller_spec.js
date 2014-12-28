@@ -29,12 +29,13 @@ describe("news controller", function() {
         });
 
         it("should return 500 as status code when connection fails", function(done) {
-            controller.getAllFeeds(source).then( function(data) {
-            
-            done()
+            controller.getAllFeeds('source').then( function(data) {
+                console.log('data error', data)
+                done();
             }).catch(function(err){
-              done(err)
-            }) 
+                console.log('mocha error', err)
+                done();
+            })
         });
 
 
