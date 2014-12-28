@@ -5,17 +5,16 @@ var Promise = require('Bluebird');
 
 exports.getAllFeeds = function(source){
     return new Promise(function(resolve, reject) {
-        request.get(source).on('error', function(err) {
-            console.log('The following error has ocurred', err)
-            reject('error')
-        }).on('response', function(dataFeeds){
+        request.get(source).on('response', function(dataFeeds){
             var response = {}
             response.statusCode = dataFeeds.statusCode
             resolve(response)
         }).on('end', function() {
-            console.log('No more to data to consume from: ', source)
+            console.log('Data from ', source , ' has been transferred.')
         })
-    });
+    }).catch(function(err) {
+            console.log('Logs: Error in getAllFeeds: ', err)
+    })
 };
 
 
