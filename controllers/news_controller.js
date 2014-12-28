@@ -10,7 +10,7 @@ exports.getAllFeeds = function(source){
             response.statusCode = dataFeeds.statusCode
             resolve(response)
         }).on('end', function() {
-            console.log('Data from ', source , ' has been transferred.')
+            console.log('Logs: Data from ', source , ' has been transferred.')
         })
     }).catch(function(err) {
             console.log('Logs: Error in getAllFeeds: ', err)

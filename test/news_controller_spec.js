@@ -23,14 +23,12 @@ describe("news controller", function() {
                 data.statusCode.should.equal(200)
                 done()
             }).catch(function(err){
-                err.should.equal(undefined)
-                done()
+                done(err)
             })
         });
 
-        it("an expection is throw, and error is handled when the connection fails", function() {
-            controller.getAllFeeds('source').then( function(data) {
-                data.should.equal(undefined)
+        it("error is managed and exception throw when the connection fails", function() {
+            controller.getAllFeeds('brokenSource').then( function(data) {
             }).catch(function(err){
                 err.should.not.equal(undefined)
             })
