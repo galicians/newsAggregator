@@ -28,6 +28,8 @@ Server side testing considerations:
 
 <h6> - test/test_server/server_steps.js:</h6>
 Rather than hard-coding a port for the tests to run on, I've used server.listen(0) to tell Node to pick one available. To check the port is being used just, server.address().port
+This server is reading the file news.feeds and piping the data into a response.
+This allow us to similate the news site servers for testing.
 <h6> - test/test_server/server.js:</h6>
 Instead of start the server, we export it as a module to be able to load it as a value on our testing scripts.
 This server is a mock API, that it will simulate the news sties we will connect.

@@ -26,7 +26,7 @@ describe("news controller", function() {
             });
         });
 
-        it("error is managed and exception throw when the connection fails", function() {
+        it("error is managed, and exception throw when the connection fails", function() {
             controller.getAllFeeds('brokenSource').then( function(data) {
             }).catch(function(err){
                 err.should.not.equal(undefined);
@@ -42,8 +42,15 @@ describe("news controller", function() {
             });
         });
 
-        it("transforms data feeds into json objects", function() {
-
+        it("transforms data feeds into json objects", function(done) {
+            controller.getAllFeeds(source).then( function(feedsNews) {
+                controller.feedsToJson(feedsNews).then( function(jsonNews) {
+                    jsonNews.length.should.equal(85);
+                });
+                done();
+            }).catch(function(err){
+                done(err);
+            });
         });
        
 

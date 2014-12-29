@@ -24,17 +24,34 @@ exports.getAllFeeds = function(source){
 
 
 
-
+var collect = function (news, story) {
+    news.push(story)
+}
 
 
 
 exports.feedsToJson = function(data) {
-    //return data in jsonformat
-};
+
+    var news = [];
+    var story = {};
+      return new Promise(function(resolve, reject) {
+        data.body.split('<item>').forEach( function(element,index) {     
+                story.title = element.substring( element.indexOf('<title>') + '<title>'.length, element.indexOf('</title>') ) 
+                story.description = element.substring(element.indexOf('<description>') + '<description>'.length, element.indexOf('</description>') )
+                story.link = element.substring(element.indexOf("<link>") + "<link>".length, element.indexOf("#sa-ns_mchannel") )
+                story.pubDate = element.substring(element.indexOf("<pubDate>") + "<pubDate>".length, element.indexOf("</pubDate>") )
+                news.push(story)
+                resolve(news)
+         })
+    }).catch(function(err) {
+        console.log('Logs: Error in feedsToJson:', err)
+    });
+                
+}
 
 
-exports.newsToMongo = function(dataJson){
-    // return 200, 500, ...
-};
+// exports.newsToMongo = function(dataJson){
+//     // return 200, 500, ...
+// };
 
 
