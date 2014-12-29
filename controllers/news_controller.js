@@ -1,20 +1,25 @@
 var request = require('request');
 var fs = require('fs');
-var Writable = require('stream').Writable;
+var concat = require('concat-stream');
 var Promise = require('Bluebird');
+var Stream = require('stream').stream;
+
+
 
 exports.getAllFeeds = function(source){
+    var response = {};
     return new Promise(function(resolve, reject) {
         request.get(source).on('response', function(dataFeeds){
-            var response = {}
-            response.statusCode = dataFeeds.statusCode
-            resolve(response)
+            response.statusCode = dataFeeds.statusCode;
+            resolve(response);
         }).on('end', function() {
-            console.log('Logs: Data from ', source , ' has been transferred.')
+            console.log('Logs: Data from ', source , ' has been transferred.');
+        }).on('data', function(chunk) {
+            response.body += chunk
         })
     }).catch(function(err) {
-            console.log('Logs: Error in getAllFeeds: ', err)
-    })
+            console.log('Logs: Error in getAllFeeds: ', err);
+    });
 };
 
 
