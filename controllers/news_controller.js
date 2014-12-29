@@ -21,13 +21,13 @@ exports.getAllFeeds = function(source){
     });
 };
 
-
 exports.feedsToJson = function(data) {
 
     var news = [];
     var story = {};
       return new Promise(function(resolve, reject) {
-        data.body.split('<item>').forEach( function(element,index) {     
+        data.body.split('<item>').forEach( function(element,index) {
+                // story.source  to be implemented  
                 story.title = element.substring( element.indexOf('<title>') + '<title>'.length, element.indexOf('</title>') );
                 story.description = element.substring(element.indexOf('<description>') + '<description>'.length, element.indexOf('</description>') );
                 story.link = element.substring(element.indexOf("<link>") + "<link>".length, element.indexOf("#sa-ns_mchannel") );
@@ -39,7 +39,6 @@ exports.feedsToJson = function(data) {
         console.log('Logs: Error in feedsToJson:', err);
     });           
 };
-
 
 // exports.newsToMongo = function(dataJson){
 //     // return 200, 500, ...

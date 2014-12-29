@@ -1,7 +1,7 @@
 var should = require("should");
 var controller = require("../controllers/news_controller");
 var testServer = require("./test_server/server");
-var serverAPI = require("./test_server/server_steps");
+var serverAPI = require("./test_server/server_helpers");
 
 describe("news controller", function() {
 
@@ -53,8 +53,6 @@ describe("news controller", function() {
             });
         });
 
-        
-       
 
     });
 

@@ -24,9 +24,6 @@ var serverHelpers = {
             self.error = error;
             self.response = response;
         });
-    },
-    checkStatusCode: function(response,testCode) {
-        return response.statusCode === testCode
     }
    
 };
