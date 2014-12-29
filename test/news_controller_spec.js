@@ -35,7 +35,7 @@ describe("news controller", function() {
 
         it("retrieves the data from the source", function(done) {
              controller.getAllFeeds(source).then( function(data) {
-                data.body.indexOf('<title>BBC News - Home</title>').should.not.equal(-1)
+                data.body.indexOf('<title>BBC News - Home</title>').should.not.equal(-1);
                 done();
             }).catch(function(err){
                 done(err);
@@ -52,6 +52,8 @@ describe("news controller", function() {
                 done(err);
             });
         });
+
+        
        
 
     });
