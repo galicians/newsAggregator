@@ -2,6 +2,8 @@ var should = require("should");
 var controller = require("../controllers/news_controller");
 var testServer = require("./test_server/server");
 var serverAPI = require("./test_server/server_helpers");
+var Story = require('../models/story');
+
 
 describe("news controller", function() {
 
@@ -42,7 +44,7 @@ describe("news controller", function() {
             });
         });
 
-        it("transforms data feeds into json objects", function(done) {
+        it("transforms data feeds into and array of json objects", function(done) {
             controller.getAllFeeds(source).then( function(feedsNews) {
                 controller.feedsToJson(feedsNews).then( function(jsonNews) {
                     jsonNews.length.should.equal(85);
@@ -52,6 +54,31 @@ describe("news controller", function() {
                 done(err);
             });
         });
+
+        it("all json objects have a title, source, description, link and pubDate", function(done) {
+            controller.getAllFeeds(source).then( function(feedsNews) {
+                controller.feedsToJson(feedsNews).then( function(jsonNews) {
+                    jsonNews.forEach( function(jsonObject) {
+                        jsonObject.source.should.not.equal(undefined)
+                        jsonObject.title.should.not.equal(undefined)
+                        jsonObject.description.should.not.equal(undefined)
+                        jsonObject.link.should.not.equal(undefined)
+                        jsonObject.pubDate.should.not.equal(undefined)
+                    })
+                });
+                done();
+            }).catch(function(err){
+                done(err);
+            });
+        });
+
+
+    });
+
+    describe("when saving the news in the database", function() {
+        var story;
+
+
 
 
     });
