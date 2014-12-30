@@ -13,8 +13,8 @@ var storyTotal = 0;
 
 StorySchema.pre('save', function(next) {
     storyTotal += 1;
-    this.total = storyTotal
-    next()
-})
+    this.total = storyTotal;
+    next();
+});
 
 module.exports = mongoose.model('Story', StorySchema);

@@ -15,7 +15,7 @@ describe('a single story', function() {
             }));
             Story.prototype.save = function(callback) {
                 if(callback) callback();
-            }
+            };
         });
 
         it("whend instanciated will have a source", function() {

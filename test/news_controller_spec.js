@@ -58,12 +58,12 @@ describe("news controller", function() {
             controller.getAllFeeds(source).then( function(feedsNews) {
                 controller.feedsToJson(feedsNews).then( function(jsonNews) {
                     jsonNews.forEach( function(jsonObject) {
-                        jsonObject.source.should.not.equal(undefined)
-                        jsonObject.title.should.not.equal(undefined)
-                        jsonObject.description.should.not.equal(undefined)
-                        jsonObject.link.should.not.equal(undefined)
-                        jsonObject.pubDate.should.not.equal(undefined)
-                    })
+                        jsonObject.source.should.not.equal(undefined);
+                        jsonObject.title.should.not.equal(undefined);
+                        jsonObject.description.should.not.equal(undefined);
+                        jsonObject.link.should.not.equal(undefined);
+                        jsonObject.pubDate.should.not.equal(undefined);
+                    });
                 });
                 done();
             }).catch(function(err){
@@ -79,7 +79,7 @@ describe("news controller", function() {
         beforeEach(function() {
             Story.prototype.save = function(callback) {
                 if(callback) callback();
-            }
+            };
             story = new Story({
             source: 'Sky News',
             title : 'Boxing Day Snow As UK Slides Towards -15C',
@@ -87,16 +87,16 @@ describe("news controller", function() {
             pubDate : 'Tue Dec 30 2014 11:56:50',
             link : 'https://github.com/galicians'   
             });
-        })
+        });
 
         it("saves all the objects in the database", function(done) {
             controller.getAllFeeds(source).then( function(feedsNews) {
                 controller.feedsToJson(feedsNews).then( function(jsonNews) {
                     controller.newsToMongo(jsonNews).then( function(msg) {
-                        msg.should.equal('all documents saved in DB')
+                        msg.should.equal('all documents saved in DB');
                         story.save(function() {
-                            story.total.should.equal(jsonNews.length + 1)
-                        })
+                            story.total.should.equal(jsonNews.length + 1);
+                        });
                     });
                 }); 
                 done();

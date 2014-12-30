@@ -1,6 +1,5 @@
 var request = require('request');
 var fs = require('fs');
-var concat = require('concat-stream');
 var Promise = require('Bluebird');
 var Story = require('../models/story');
 
@@ -34,8 +33,8 @@ exports.feedsToJson = function(data) {
             story.description = element.substring(element.indexOf('<description>') + '<description>'.length, element.indexOf('</description>') );
             story.link = element.substring(element.indexOf("<link>") + "<link>".length, element.indexOf("#sa-ns_mchannel") );
             story.pubDate = element.substring(element.indexOf("<pubDate>") + "<pubDate>".length, element.indexOf("</pubDate>") );
-            news.push(story)
-            resolve(news)  
+            news.push(story);
+            resolve(news);
         });
 
     }).catch(function(err) {
@@ -55,9 +54,9 @@ exports.newsToMongo = function(dataJson){
                 link: story.link,
                 pubDate: story.pubDate
             });
-            storyDocument.save()
-            resolve('all documents saved in DB')
-        })
+            storyDocument.save();
+            resolve('all documents saved in DB');
+        });
     }).catch(function(err) {
         console.log('Logs: Error in news to mongo: ', err);
      });
