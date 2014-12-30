@@ -4,7 +4,6 @@ var testServer = require("./test_server/server");
 var serverAPI = require("./test_server/server_helpers");
 var Story = require('../models/story');
 
-
 describe("news controller", function() {
 
     var source;
@@ -17,7 +16,7 @@ describe("news controller", function() {
         serverAPI.stopServer();
     });
 
-    describe("when getting the feeds", function() {
+    describe("getting the feeds from the source", function() {
 
         it("should return 200 status code when connection is successful", function(done) {
             controller.getAllFeeds(source).then( function(data) {
@@ -72,14 +71,39 @@ describe("news controller", function() {
             });
         });
 
-
     });
 
-    describe("when saving the news in the database", function() {
+    describe("when saving the news into the database", function() {
         var story;
 
+        beforeEach(function() {
+            Story.prototype.save = function(callback) {
+                if(callback) callback();
+            }
+            story = new Story({
+            source: 'Sky News',
+            title : 'Boxing Day Snow As UK Slides Towards -15C',
+            description : 'Severe weather alerts are issued for Boxing Day ...',
+            pubDate : 'Tue Dec 30 2014 11:56:50',
+            link : 'https://github.com/galicians'   
+            });
+        })
 
-
+        it("saves all the objects in the database", function(done) {
+            controller.getAllFeeds(source).then( function(feedsNews) {
+                controller.feedsToJson(feedsNews).then( function(jsonNews) {
+                    controller.newsToMongo(jsonNews).then( function(msg) {
+                        msg.should.equal('all documents saved in DB')
+                        story.save(function() {
+                            story.total.should.equal(jsonNews.length + 1)
+                        })
+                    });
+                }); 
+                done();
+            }).catch(function(err){
+                done(err);
+            });
+        });
 
     });
 

@@ -5,34 +5,44 @@ var Story = require('../models/story');
 describe('a single story', function() {
     var story;
 
-    describe('when instanciated can have', function() {
-
         before(function(){
             story = new Story(({
                 source: 'Sky News',
                 title : 'Boxing Day Snow As UK Slides Towards -15C',
                 description : 'Severe weather alerts are issued for Boxing Day ...',
-                pubDate : new Date(),
+                pubDate : "Tue Dec 30 2014 11:56:50",
                 link : 'https://github.com/galicians'   
             }));
+            Story.prototype.save = function(callback) {
+                if(callback) callback();
+            }
         });
 
-        it("a source", function() {
+        it("whend instanciated will have a source", function() {
             story.source.should.equal('Sky News');
         });
-        it("a title",function() {
+        it("whend instanciated will have a title",function() {
             story.title.should.equal('Boxing Day Snow As UK Slides Towards -15C');
         });
-        it("a summary", function() {
+        it("whend instanciated will have a summary", function() {
             story.description.should.equal('Severe weather alerts are issued for Boxing Day ...');
         });
-        it("a publication date", function() {
-            story.pubDate.should.not.equal(undefined);
+        it("whend instanciated will have a publication date", function() {
+            story.pubDate.should.equal("Tue Dec 30 2014 11:56:50");
         });
-        it("a link", function() {
+        it("whend instanciated will have a link", function() {
             story.link.should.equal('https://github.com/galicians');
         });
-     });
+        it("saves all the attributes of each object", function(done) { 
+            story.save(function() {
+                story.description.should.equal("Severe weather alerts are issued for Boxing Day ...");
+                story.title.should.equal('Boxing Day Snow As UK Slides Towards -15C');
+                story.source.should.equal('Sky News');
+                story.pubDate.should.equal('Tue Dec 30 2014 11:56:50');
+                story.link.should.equal('https://github.com/galicians');
+            });
+            done();
+        });
 
 });
 
