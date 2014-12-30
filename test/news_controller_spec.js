@@ -122,8 +122,8 @@ describe("The news controller", function() {
                 }
             };
             Story.find = function(callback) {
-                callback(null, { source: 'bbc', title: 'Node v 1.0 will be ready in 5 years' })
-            }
+                callback(null, { source: 'bbc', title: 'Node v 1.0 will be ready in 5 years' });
+            };
         });
 
         it("should return 200", function() {
@@ -133,16 +133,16 @@ describe("The news controller", function() {
         });
         it("should send back the data", function() {
             controller.getNews(req, res);
-            sentData.source.should.equal('bbc')
-            sentData.title.should.equal("Node v 1.0 will be ready in 5 years")
+            sentData.source.should.equal('bbc');
+            sentData.title.should.equal("Node v 1.0 will be ready in 5 years");
         });
 
         it("should return 500 when find errors", function() {
             Story.find = function(callback) {
-                callback({err: 1}, null)
+                callback({err: 1}, null);
             };
-            controller.getNews(req, res)
-            statusCode.should.equal(500)
+            controller.getNews(req, res);
+            statusCode.should.equal(500);
         });
     });
 

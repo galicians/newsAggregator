@@ -68,11 +68,11 @@ exports.newsToMongo = function(dataJson) {
 exports.getNews = function(req, res) {
         Story.find(function(err, data) {
             if(err){
-                res.send(500)
+                res.send(500);
             } else {
-                res.send(200, data)
+                res.send(200, data);
             }
-    })
+    });
     
 };
 
