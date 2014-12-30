@@ -4,7 +4,7 @@ var testServer = require("./test_server/server");
 var serverAPI = require("./test_server/server_helpers");
 var Story = require('../models/story');
 
-describe("news controller", function() {
+describe("The news controller", function() {
 
     var source;
 
@@ -108,8 +108,42 @@ describe("news controller", function() {
     });
 
     describe("when fetching the news from the database", function(){
-        it("should return 200");
-        it("should return 500 when find errors");
+
+        var req;
+        var res;
+        var statusCode;
+        var news;
+
+        beforeEach(function() {
+            res = {
+                send : function(code,data) {
+                    statusCode = code,
+                    sentData = data;
+                }
+            };
+            Story.find = function(callback) {
+                callback(null, { source: 'bbc', title: 'Node v 1.0 will be ready in 5 years' })
+            }
+        });
+
+        it("should return 200", function() {
+            controller.getNews(req, res);
+            statusCode.should.equal(200);
+
+        });
+        it("should send back the data", function() {
+            controller.getNews(req, res);
+            sentData.source.should.equal('bbc')
+            sentData.title.should.equal("Node v 1.0 will be ready in 5 years")
+        });
+
+        it("should return 500 when find errors", function() {
+            Story.find = function(callback) {
+                callback({err: 1}, null)
+            };
+            controller.getNews(req, res)
+            statusCode.should.equal(500)
+        });
     });
 
 });

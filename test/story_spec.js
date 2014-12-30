@@ -2,7 +2,7 @@ var should = require('should');
 var Story = require('../models/story');
 
 
-describe('a single story', function() {
+describe('A single story', function() {
     var story;
 
         before(function(){

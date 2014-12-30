@@ -1,7 +1,9 @@
 var request = require('request');
 var fs = require('fs');
 var Promise = require('Bluebird');
+var mongoose = require('mongoose');
 var Story = require('../models/story');
+
 
 exports.getAllFeeds = function(source){
 
@@ -12,7 +14,7 @@ exports.getAllFeeds = function(source){
             response.source = source;
             resolve(response);
         }).on('end', function() {
-            console.log('Logs: Data from ', source , ' has been transferred.');
+            // console.log('Logs: Data from ', source , ' has been transferred.');
         }).on('data', function(chunk) {
             response.body += chunk;
         });
@@ -42,7 +44,7 @@ exports.feedsToJson = function(data) {
     });           
 };
 
-exports.newsToMongo = function(dataJson){
+exports.newsToMongo = function(dataJson) {
 
     var storyDocument;
     return new Promise( function(resolve, reject) {
@@ -58,9 +60,19 @@ exports.newsToMongo = function(dataJson){
             resolve('all documents saved in DB');
         });
     }).catch(function(err) {
-        console.log('Logs: Error in news to mongo: ', err);
+        console.log('Logs: Error in newsToMongo: ', err);
      });
   
 };
 
+exports.getNews = function(req, res) {
+        Story.find(function(err, data) {
+            if(err){
+                res.send(500)
+            } else {
+                res.send(200, data)
+            }
+    })
+    
+};
 
