@@ -3,7 +3,7 @@ var fs = require('fs');
 var Promise = require('Bluebird');
 var mongoose = require('mongoose');
 var Story = require('../models/story');
-
+var config = require('../config');
 
 exports.getAllFeeds = function(source){
 
@@ -13,8 +13,6 @@ exports.getAllFeeds = function(source){
             response.statusCode = dataFeeds.statusCode;
             response.source = source;
             resolve(response);
-        }).on('end', function() {
-            // console.log('Logs: Data from ', source , ' has been transferred.');
         }).on('data', function(chunk) {
             response.body += chunk;
         });
@@ -27,13 +25,18 @@ exports.feedsToJson = function(data) {
 
     var news = [];
     var story = {};
+    var source;
       return new Promise(function(resolve, reject) {
         data.body.split('<item>').forEach( function(element,index) {
+            if(index === 0) {
+                source = data.source.substring( data.source.indexOf('http://feeds.') + 'http://feeds.'.length, data.source.indexOf('.co') );
+                return true;
+            }
             story = {};
-            story.source = data.source.substring( data.source.indexOf('http://feeds.') + 'http://feeds.'.length, data.source.indexOf('.co') );
+            story.source = source;
             story.title = element.substring( element.indexOf('<title>') + '<title>'.length, element.indexOf('</title>') );
             story.description = element.substring(element.indexOf('<description>') + '<description>'.length, element.indexOf('</description>') );
-            story.link = element.substring(element.indexOf("<link>") + "<link>".length, element.indexOf("#sa-ns_mchannel") );
+            story.link = element.substring(element.indexOf("<link>") + "<link>".length, element.indexOf("</link>") );
             story.pubDate = element.substring(element.indexOf("<pubDate>") + "<pubDate>".length, element.indexOf("</pubDate>") );
             news.push(story);
             resolve(news);
@@ -56,17 +59,23 @@ exports.newsToMongo = function(dataJson) {
                 link: story.link,
                 pubDate: story.pubDate
             });
-            storyDocument.save();
+            storyDocument.save(function(err) {
+                if (err) {
+                console.log(err);
+                } else{
+                    // console.log('new document saved')
+                } 
+            });
             resolve('all documents saved in DB');
         });
     }).catch(function(err) {
         console.log('Logs: Error in newsToMongo: ', err);
      });
-  
 };
 
 exports.getNews = function(req, res) {
-        Story.find(function(err, data) {
+
+            Story.find({},{title: 1, source: 1}, function(err, data) {
             if(err){
                 res.send(500);
             } else {

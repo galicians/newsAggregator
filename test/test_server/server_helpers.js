@@ -6,7 +6,7 @@ var serverHelpers = {
         this.server.listen(0);
         this.port = this.server.address().port;
         this.origin = "http://localhost:" + this.port;
-        console.log('Test server listening on', this.origin)
+        console.log('Test server listening on', this.origin);
         return this.origin;
     },
 

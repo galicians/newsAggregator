@@ -1,0 +1,72 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+<channel>
+<link xmlns="http://www.w3.org/2005/Atom" rel="self" href="http://fulltextrssfeed.com/feeds.feedburner.com/newsyc100"/>
+<title>Hacker News 100</title>
+<link>http://feeds.feedburner.com/newsyc100</link>
+<description>
+Hacker News stories as soon as they reach 100 points // via fulltextrssfeed.com
+</description>
+<item>
+<link>http://the-japan-news.com/news/article/0001825662</link>
+<guid isPermaLink="true">http://the-japan-news.com/news/article/0001825662</guid>
+<title>
+Fraud caused disappearance of 99% of Mt. Gox Bitcoins (the-japan-news.com)
+</title>
+<pubDate>Wed, 31 Dec 2014 19:50:01 +0000</pubDate>
+<description>
+<div id="articleContentHeaderPWrapper"> <p id="articleContentHeaderP">6:00 am, January 01, 2015</p> </div><div id="articleContentBody" itemprop="articleBody"> <p><span class="credit">The Yomiuri Shimbun</span> Among about 650,000 bitcoins that went missing from failed Mt. Gox’s exchange system, about 7,000 bitcoins, or only about 1 percent of the total, were lost due to cyber-attacks and it is highly suspected that the remaining 99 percent disappeared after the system was fraudulently operated by an unknown party, according to sources in the Metropolitan Police Department.</p> <p>The missing amount — about 650,000 bitcoins — is worth about ¥24.7 billion as of Wednesday.</p> <p>The MPD is currently investigating Mt. Gox, suspecting a person who is familiar with the exchange system may have misappropriated bitcoins of the company’s customers.</p> <p>***</p> <p>To read more, pick up the Jan. 3 print edition of The Japan News.</p> <p><a class="speechControll" href="http://redirect.viglink.com?key=11fe087258b6fc0532a5ccfc924805c0&u=javascript%3Avoid%280%29" data-speech="265485"/>Speech</p> </div><img src="http://pixel.quantserve.com/pixel/p-89EKCgBk8MZdE.gif" border="0" height="1" width="1" />
+</description>
+</item>
+<item>
+<link>
+https://code.google.com/p/android/issues/detail?id=41626
+</link>
+<guid isPermaLink="true">
+https://code.google.com/p/android/issues/detail?id=41626
+</guid>
+<title>
+Two-year-old Nexus 4 issue status changed to Obsolete (google.com)
+</title>
+<pubDate>Wed, 31 Dec 2014 23:50:02 +0000</pubDate>
+<description>
+<div id="hc0"> <div class="author">Reported by <a class="userlink" href="http://redirect.viglink.com?key=11fe087258b6fc0532a5ccfc924805c0&u=https%3A%2F%2Fcode.google.com%2Fu%2F105868870012683539177%2F">d.androi...@gmail.com</a>, <span class="date" title="Tue Dec 18 10:43:25 2012">Dec 18, 2012</span></div> <pre> Nexus 4 Android 4.2.1 When on a SIP call via the Android Dialer, the other party hears a very loud echo of themselves. A Verizon Galaxy Nexus (Android 4.1) on the SAME exact SIP account with the SAME exact settings does not produce this echo. Therefore I don't know if the problem is with Android 4.2.1 or with the Nexus 4. However, the echo disappears if headphones are used with the Nexus 4, which is very confusing to me. Unfortunately the other parties have a very hard time hearing me if headphones are used. I haven't even tried speakerphone with a SIP call on the Nexus 4, but I imagine it would be a nightmare. Since it works with headphones, I have a bad feeling that this is a Nexus 4 problem. </pre></div><img src="http://pixel.quantserve.com/pixel/p-89EKCgBk8MZdE.gif" border="0" height="1" width="1" />
+</description>
+</item>
+<item>
+<link>http://darkmail.info/home.html</link>
+<guid isPermaLink="true">http://darkmail.info/home.html</guid>
+<title>Dark Mail Technical Alliance (darkmail.info)</title>
+<pubDate>Thu, 01 Jan 2015 02:30:02 +0000</pubDate>
+<description>
+<div id="content"> <div class="col_two_third"> <p> <h3>Our Mission</h3> <span>To bring the world our unique end-to-end encrypted protocol and architecture that is the 'next-generation' of private and secure email. As founding partners of The Dark Mail Technical Alliance, both Silent Circle and Lavabit will work to bring other members into the alliance, assist them in implementing the new protocol and jointly work to proliferate the world's first end-to-end encrypted 'Email 3.0' throughout the world's email providers. Our goal is to open source the protocol and architecture and help others implement this new technology to address privacy concerns against surveillance and back door threats of any kind.</span></p> <br /> <h3>Dark Mail Team</h3> <p><img src="http://darkmail.info/images/character-phil-jon.png" alt="Dark Mail Team" title="Dark Mail Team" /></p> <p><img src="http://darkmail.info/images/character-mike-ladar.png" alt="Dark Mail Team" title="Dark Mail Team" /></p> </div> <div class="col_one_third col_last"> <div class="c4"> <h4>Founding Members:</h4> <div class="testimonials testi-content c3" id="widget-testimonial-2"><a href="http://redirect.viglink.com?key=11fe087258b6fc0532a5ccfc924805c0&u=https%3A%2F%2Fsilentcircle.com%2F" class="standard-logo" target="blank"><img src="http://darkmail.info/images/logo-silentcircle.jpg" alt="Silent Circle" title="Silent Circle" /></a> <a href="http://redirect.viglink.com?key=11fe087258b6fc0532a5ccfc924805c0&u=http%3A%2F%2Flavabit.com%2F" class="standard-logo" target="blank"><img src="http://darkmail.info/images/logo-lavabit.jpg" alt="Lavabit" title="Lavabit" /></a></div> </div> </div> </div><img src="http://pixel.quantserve.com/pixel/p-89EKCgBk8MZdE.gif" border="0" height="1" width="1" />
+</description>
+</item>
+<item>
+<link>
+http://hookrace.net/blog/what-is-special-about-nim/
+</link>
+<guid isPermaLink="true">
+http://hookrace.net/blog/what-is-special-about-nim/
+</guid>
+<title>What is special about Nim? (hookrace.net)</title>
+<pubDate>Thu, 01 Jan 2015 05:20:01 +0000</pubDate>
+<description>...</description>
+</item>
+<item>
+<link>http://news.ycombinator.com/item?id=8822808</link>
+<guid isPermaLink="true">http://news.ycombinator.com/item?id=8822808</guid>
+<title>
+Ask HN: Who is hiring? (January 2015) (ycombinator.com)
+</title>
+<pubDate>Thu, 01 Jan 2015 06:00:01 +0000</pubDate>
+<description>...</description>
+</item>
+<item>
+<link>http://avc.com/2015/01/what-is-going-to-happen/</link>
+<guid isPermaLink="true">http://avc.com/2015/01/what-is-going-to-happen/</guid>
+<title>What is going to happen in 2015 (avc.com)</title>
+<pubDate>Thu, 01 Jan 2015 09:30:02 +0000</pubDate>
+<description>...</description>
+</item>
+</channel>
+</rss>

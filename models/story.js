@@ -1,12 +1,14 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+
+
 var StorySchema = new Schema({
     source: {type: String, required: true },
-    title : {type: String, required: true },
-    description : {type: String, required: true },
-    pubDate : {type: String, required: true },
-    link : { type: String, require: true},
-    total : {type: Number}
+    title : {type: String, required: true , index: {unique: true}},
+    description : {type: String },
+    pubDate : {type: String },
+    link : { type: String },
+    total : {type: Number }
 });
 
 var storyTotal = 0;

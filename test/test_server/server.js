@@ -6,7 +6,7 @@ var server = http.createServer();
 
 server.on("request", function(request, response) { 
     response.writeHead(200, {"Content-Type": "text/plain"});
-    var feeds = fs.createReadStream(__dirname + '/data/news.feeds');
+    var feeds = fs.createReadStream(__dirname + '/data/bbc.feeds');
     feeds.pipe(response);
 });
 

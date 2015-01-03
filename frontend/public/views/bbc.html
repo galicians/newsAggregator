@@ -1,0 +1,7 @@
+<h2>BBC news</h2>
+
+ <section id="news">
+      <article class="latest" ng-repeat="story in news | limitTo : newsLimit | filter: { source: 'bbci' }">
+        <div id ="{{story.source}}">{{story.source}} : {{story.title}}</div>
+        </article>
+    </section>

@@ -17,8 +17,10 @@
   },
   "dependencies": {
     "bluebird": "^2.4.2",
+    "ecstatic": "^0.5.8",
     "mongoose": "^3.8.21",
     "request": "^2.51.0",
+    "restify": "^2.8.4",
     "rsj": "0.0.4"
   }
 }
