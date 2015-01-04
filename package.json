@@ -9,11 +9,16 @@
   "author": "Pablo Portabales",
   "license": "ISC",
   "devDependencies": {
+    "bower": "^1.3.1",
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",
     "mocha": "^2.0.1",
-    "should": "^4.4.1"
+    "should": "^4.4.1",
+    "karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-jasmine": "*",
+    "jasmine-core": "*"
   },
   "dependencies": {
     "bluebird": "^2.4.2",

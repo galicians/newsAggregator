@@ -40,11 +40,11 @@ describe('News controller', function() {
         };
 
         describe('Scope', function(){
-            it('Should initialize loading to true', function(){
+  
+        it('Should initialize loading to true', function(){
               expect(scope.loading).toBeTruthy();
             });
         });
-
         it('Should populate news from service', function() {
 
             scope.getNews();
@@ -75,7 +75,7 @@ describe('News controller', function() {
             $rootScope.$digest();
 
             expect(scope.loading).toBeFalsy()
-        })
+        });
     });
 
       describe('Controller Scope', function(){

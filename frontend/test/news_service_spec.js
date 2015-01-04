@@ -43,3 +43,4 @@ describe('News Service', function() {
         });
     });
 });
+

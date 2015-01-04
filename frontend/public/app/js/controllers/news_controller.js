@@ -6,7 +6,6 @@ angular.module('newsApp').controller('newsController', ['newsService','$scope', 
     $scope.getNews = function() {
         newsService.getNews().then(function(news){
             $scope.news = news
-            console.log($scope.news)
             $scope.loading = false;
         }).catch(function(error){
             // console.log("Logs: error in newsController", error);
