@@ -1,18 +1,18 @@
 <h2>Today's latests news:</h2>
 
 <section id="BBCnews">
-      <article class="latest" ng-repeat="story in news | limitTo : newsLimit | filter: { source: 'bbci' }">
+      <article class="latest" ng-repeat="story in news | filter: { source: 'bbci' }| limitTo : newsLimit ">
         <div id ="{{story.source}}">{{story.source}} : {{story.title}}</div>
         </article>
 </section>
  <section id="SKYnews">
-      <article class="latest" ng-repeat="story in news | limitTo : newsLimit | filter: { source: 'skynews' }">
+      <article class="latest" ng-repeat="story in news  | filter: { source: 'skynews' } | limitTo : newsLimit ">
         <div id ="{{story.source}}">{{story.source}} : {{story.title}}</div>
         </article>
 </section>
 
  <section id="HACKERnews">
-      <article class="latest" ng-repeat="story in news | limitTo : newsLimit | filter: { source: 'feedburner' }">
+      <article class="latest" ng-repeat="story in news | filter: { source: 'feedburner' } | limitTo : newsLimit  ">
         <div id ="{{story.source}}">{{story.source}} : {{story.title}}</div>
         </article>
 </section>

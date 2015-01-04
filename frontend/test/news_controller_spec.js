@@ -8,7 +8,6 @@ describe('News controller', function() {
     var scope;
 
     beforeEach(module('newsApp'));
-    beforeEach(module('newsAppControllers'));
 
     beforeEach(module(function($provide){
         newsService = {

@@ -1,7 +1,7 @@
 <h2>Sky news</h2>
 
  <section id="news">
-      <article class="latest" ng-repeat="story in news | limitTo : newsLimit | filter: { source: 'skynews' }">
+      <article class="latest" ng-repeat="story in news | filter: { source: 'skynews' }  | limitTo : newsLimit ">
         <div id ="{{story.source}}">{{story.source}} : {{story.title}}</div>
         </article>
 </section>

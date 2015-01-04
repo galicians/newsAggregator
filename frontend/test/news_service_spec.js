@@ -7,7 +7,7 @@ describe('News Service', function() {
     var err;
 
     beforeEach(module('newsApp'));
-    beforeEach(module('newsAppServices'));
+    
 
     beforeEach(inject(function(_$httpBackend_, $injector) {
 
