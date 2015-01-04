@@ -1,7 +1,10 @@
-<h2>Sky news</h2>
-
- <section id="news">
-      <article class="latest" ng-repeat="story in news | filter: { source: 'skynews' }  | limitTo : newsLimit ">
-        <div id ="{{story.source}}">{{story.source}} : {{story.title}}</div>
-        </article>
-</section>
+<div class="list-group">
+    <div class="news" ng-repeat="story in news  | filter: { source: 'skynews' } | limitTo : newsLimit ">
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Sky News</h4>
+            <article class="list-group-item-text">
+                <p class="text-primary"> {{story.title}} </p>
+            </article>
+        </a>
+    </div>
+</div>
