@@ -1,6 +1,4 @@
-
-<h3>News aggregator</h3>
-
+##**News aggregator**
 
 Simple news aggregation website displaying the latest news across multiple sources.
 Requirements:
