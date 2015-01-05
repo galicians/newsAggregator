@@ -4,7 +4,7 @@ var hackerSource = "http://feeds.feedburner.com/TheHackersNews";
 exports.port = process.env.PORT || 3000;
 exports.sources = [];
 exports.frecuency = 10000;
-exports.dbUrl = process.env.DATABASE_URL || 'mongodb://localhost/aggregatornews';
+exports.dbUrl = MONGOLAB_URI || 'mongodb://localhost/aggregatornews';
 exports.queryLimit = 2000;
 
 exports.sources.push(bbcSource);
