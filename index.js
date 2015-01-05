@@ -6,7 +6,6 @@ var data = require('./config');
 var utils = require('./utils/utils');
 var ecstatic = require('ecstatic');
 
-console.log(process.env)
 
 var connectDB = Promise.promisify(mongoose.connect, mongoose);
 

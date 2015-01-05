@@ -6,7 +6,6 @@ exports.sources = [];
 exports.frequency = 10000;
 exports.dbUrl = process.env.MONGOLAB_URI || 'mongodb://localhost/aggregatornews';
 exports.queryLimit = 2000;
-
 exports.sources.push(bbcSource);
 exports.sources.push(skySource);
 exports.sources.push(hackerSource);
