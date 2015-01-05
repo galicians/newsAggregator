@@ -32,7 +32,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "node node_modules/karma/bin/karma start frontend/test/karma.conf.js",
+    "test": "mocha -w",
+    "frontend": "node node_modules/karma/bin/karma start frontend/test/karma.conf.js",
     "start": "node index.js",
     "postinstall" : "./node_modules/bower/bin/bower install",
     "prestart": "npm install --production"
