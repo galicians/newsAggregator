@@ -6,11 +6,13 @@ var data = require('./config');
 var utils = require('./utils/utils');
 var ecstatic = require('ecstatic');
 
+console.log(process.env)
+
 var connectDB = Promise.promisify(mongoose.connect, mongoose);
 
 mongoose.set('debug', true);
 
-setInterval(function() { utils.retriever(data.sources) }, data.frecuency);
+setInterval(function() { utils.retriever(data.sources) }, data.frequency);
 
 var app = restify.createServer()
 
