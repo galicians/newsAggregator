@@ -11,18 +11,16 @@ var connectDB = Promise.promisify(mongoose.connect, mongoose);
 
 mongoose.set('debug', true);
 
-setInterval(function() { utils.retriever(data.sources) }, data.frequency);
+setInterval(function() { utils.retriever(data.sources); }, data.frequency);
 
-var app = restify.createServer()
-
+var app = restify.createServer();
 app.use(ecstatic({ root: __dirname + '/frontend/public/'}));
  
 app.get("/", function(req,res, next){
-    res.send('index.html')
-})
+    res.send('index.html');
+});
 
-app.get('/getNews', controller.getNews )
-
+app.get('/getNews', controller.getNews);
 
 app.get(/.*/, restify.serveStatic({
     directory: 'public',
@@ -32,8 +30,8 @@ app.get(/.*/, restify.serveStatic({
 
 connectDB(data.dbUrl)
 .then(function() {
-    console.log("connected to mongodb successfully!")
-})
+    console.log("connected to mongodb successfully!");
+});
 
 app.listen(data.port, function() {
     console.log('Restify server listening at port', data.port);
