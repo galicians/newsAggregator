@@ -4,7 +4,7 @@ angular.module('newsApp').factory('newsService', ['$resource','$q', function($re
     return {
         getNews: function(){
             var deferred = $q.defer();
-            $resource('https://newseveryminute.herokuapp.com/getNews').query()
+            $resource('http://localhost:3000/getNews').query()
             .$promise
             .then(function(data) {
                 deferred.resolve(data);
