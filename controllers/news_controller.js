@@ -1,6 +1,6 @@
 var request = require('request');
 var fs = require('fs');
-var Promise = require('Bluebird');
+var Promise = require('bluebird');
 var mongoose = require('mongoose');
 var Story = require('../models/story');
 var config = require('../config');
