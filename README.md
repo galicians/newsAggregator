@@ -7,7 +7,9 @@ Requirements:
 -  All data stored in MongoDb.
 
 ###**Project Overview**
+
 To see the project live just visit the url: https://newseveryminute.herokuapp.com/
+
 To run the project on your local machine just clone:
  - git clone https://github.com/galicians/newsAggregator
  - npm start (this will install node modules and bower components the first time, and will start the server)
